@@ -1,10 +1,12 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+
 import './App.css';
 
-// import Todo component here
+ 
 import Todo from './components/Todo';
-
+import SICalc from './components/SICalc';
+import NameForm from './components/NameForm'
+import Calculator from './components/Calculator'
 class App extends Component {
 
 constructor(props) {
@@ -19,7 +21,11 @@ render() {
     // use Todo component inside render method.
     return (
       <div className="App">
-        <Todo />
+
+          <Todo />
+          <SICalc />
+         <NameForm /> 
+          <Calculator /> 
       </div>
     );
   }
